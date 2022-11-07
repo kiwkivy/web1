@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: fantasy;
+            font-style: normal;
+            font-variant: normal;
+            color: black;
+            width: auto;
+            margin: 2px;
+            font-weight: 50;
+        }
+
+        .body_of_table {
+            background: url(aranara.gif);
+            background-size: cover;
+        }
+
+        .body_of_main {
+            background-image: url(sand.png);
+            background-size: cover;
+        }
+
+        button:active {
+            background-color: green;
+        }
+
+        .errors{
+            font-size: 16px;
+            line-height: 10.4px;
+            color: crimson;
+        }
+        table {
+            border: 3px solid grey;
+            border-collapse: collapse;
+            width: auto;
+
+        }
+
+        .my_button {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+        }
+
+
+
+        .table_main{
+            width: 80%;
+            color: #2f3073;
+            margin: 4% auto;
+            text-align: center;
+        }
+
+        .table_main th{
+            width: 50%;
+        }
+
+        caption{
+            caption-side: top;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid grey;
+            vertical-align: center;
+        }
+
+        td{
+            width: 20%;
+        }
+
+        .my_title{
+            text-align: left;
+            color:  inherit;
+        }
+
+
+
+
+    </style>
+    <meta charset="utf-8">
+    <title>Лаба по вебу я пыталась честно</title>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body class="body_of_main">
+<table class="table_main">
+    <tr>
+        <th class="my_title">
+            <i>Лабораторная работа №1.<br>
+            ФИО: Гладкая Ксения Витальевна<br>
+            Группа: P32141<br>
+            Вариант: 1401<br>
+            </i>
+        </th>
+    </tr>
+    <tr>
+        <th>Координатная плоскость</th>
+        <th>Ввод значений</th>
+    </tr>
+    <tr>
+        <td>
+            <img src="areas.png">
+        </td>
+        <td>
+            <form action="validate.php" id ="answers" method="get" onsubmit="return isCorrect()">
+                <p class="errors" id="err_range"> </p>
+                X:
+                <input required type ="radio" name="x" value="-3"> -3
+                <input required type ="radio" name="x" value="-2"> -2
+                <input required type ="radio" name="x" value="-1"> -1
+                <input required type ="radio" name="x" value="0"> 0
+                <input required type ="radio" name="x" value="1"> 1
+                <input required type ="radio" name="x" value="2"> 2
+                <input required type ="radio" name="x" value="3"> 3
+                <input required type ="radio" name="x" value="4"> 4
+                <input required type ="radio" name="x" value="5"> 5<br>
+                Y:
+                <input required type ="text" id="y" name ="y" maxlength="6"/>
+                <p class="errors" id="err_y" > </p>
+                R:
+                <input required type ="text" id="r" name ="r" maxlength="6"/>
+                <p class="errors" id="err_r" > </p>
+                <!--<input type="text" name ="submit" id="submit" value="true">-->
+                <input type="submit" value="Испытать себя">
+                <input type="reset" value="Очистить форму пожалуйста">
+            </form>
+        </td>
+    </tr>
+    <td>
+        <video width="400" height="300" controls="controls"poster="3.gif">
+            <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+    </td>
+</table>
+<script src="validate_form.js"></script>
+</body>
+</html>

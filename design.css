@@ -1,0 +1,77 @@
+body {
+    font-family: fantasy;
+    font-style: normal;
+    font-variant: normal;
+    color: black;
+    width: auto;
+    margin: 2px;
+    font-weight: 50;
+}
+
+.body_of_table {
+    background: url(aranara.gif);
+    background-size: cover;
+}
+
+.body_of_main {
+    background-image: url(sand.png);
+    background-size: cover;
+}
+
+button:active {
+    background-color: green;
+}
+
+.errors{
+    font-size: 16px;
+    line-height: 10.4px;
+    color: crimson;
+}
+table {
+    border: 3px solid grey;
+    border-collapse: collapse;
+    width: auto;
+
+}
+
+.my_button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+
+
+.table_main{
+    width: 80%;
+    color: #2f3073;
+    margin: 4% auto;
+    text-align: center;
+}
+
+.table_main th{
+    width: 50%;
+}
+
+caption{
+    caption-side: top;
+    text-align: left;
+}
+th, td {
+    border: 1px solid grey;
+    vertical-align: center;
+}
+
+td{
+    width: 20%;
+}
+
+.my_title{
+    text-align: left;
+    color:  inherit;
+}
+
+
+
